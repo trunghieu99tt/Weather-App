@@ -1,0 +1,8 @@
+.page-main {
+    display: flex;
+    min-height: 100vh;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+}

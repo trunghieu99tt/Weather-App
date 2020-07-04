@@ -1,0 +1,80 @@
+.card {
+    padding: 24px 0;
+    text-align: center;
+    background: #1e213a;
+
+    &__title {
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #e7e7eb;
+        margin-bottom: 10px;
+    }
+
+    &__number {
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 64px;
+        text-align: center;
+        color: #e7e7eb;
+        margin-bottom: 17px;
+
+        span {
+            font-size: 30px;
+            font-weight: normal;
+        }
+    }
+}
+
+.weatherCard1 {
+    background: #1e213a;
+    padding: 18px 22px;
+    text-align: center;
+
+    &__date {
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #e7e7eb;
+        margin-bottom: 10px;
+    }
+
+    &__image {
+        width: 56.44px;
+        height: 62px;
+        object-fit: contain;
+        margin-bottom: 31px;
+    }
+
+    &__maxTemp {
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 16px;
+        color: #a09fb1;
+        margin-left: 16px;
+    }
+
+    &__minTemp {
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 16px;
+        color: #e7e7eb;
+    }
+}
+
+.weatherCard2 {
+    &__icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        figcaption {
+            font-family: Raleway;
+            font-weight: 500;
+            font-size: 14px;
+            color: #e7e7eb;
+        }
+    }
+}

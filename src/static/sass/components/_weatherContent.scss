@@ -1,0 +1,81 @@
+.weatherContent {
+    background: #100e1d;
+    flex: 1;
+    max-width: 90%;
+    padding: 42px 155px;
+    position: relative;
+
+    @include respond(tab-land) {
+        padding: 30px;
+    }
+
+    @include respond(phone) {
+        max-width: 100%;
+    }
+
+    @include respond(phone) {
+        min-height: 80vh;
+    }
+
+    &-nextDays {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 26px;
+    }
+
+    &-highLights {
+        margin-top: 72px;
+
+        &__heading {
+            font-family: Raleway;
+            font-weight: bold;
+            font-size: 24px;
+            color: #e7e7eb;
+            margin-bottom: 32px;
+        }
+    }
+
+    &-highLightsCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 48px;
+
+        @include respond(tab-land) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    }
+
+    &-changeDegreeBtns {
+        text-align: right;
+        margin-bottom: 66px;
+        @include respond(tab-land) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .changeDegree-btn {
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #e7e7eb;
+        padding: 10px;
+        cursor: pointer;
+        background: #585676;
+        border-radius: 54px;
+        border: none;
+
+        &:first-child {
+            margin-right: 12px;
+        }
+
+        &.active {
+            color: #110e3c;
+            background-color: #fff;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

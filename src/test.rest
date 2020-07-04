@@ -1,0 +1,1 @@
+GET https://api.mapbox.com/geocoding/v5/mapbox.places/ha.json?access_token=pk.eyJ1IjoicmlraWt1ZG8iLCJhIjoiY2p6eHJrYXl6MDEwMzNicG50bXExa3hiYyJ9.1iZ-Ou4tdhARAqrV7VOYpw  HTTP/1.1

@@ -1,0 +1,57 @@
+.humidityBar {
+    width: 70%;
+    margin: 0 auto;
+
+    &__percentNumbers {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        p {
+            font-family: Raleway;
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+            color: #a09fb1;
+        }
+    }
+
+    &__unit {
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: right;
+        margin-top: 10px;
+        color: #a09fb1;
+    }
+
+    &-heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        p {
+            font-size: 16px;
+
+            @include respond(phone) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .progress-bar {
+        background: #e7e7eb;
+        height: 8px;
+        border-radius: 999px;
+        position: relative;
+
+        &__inner {
+            position: absolute;
+            height: 100%;
+            content: "";
+            background: #ffec65;
+            top: 0;
+            left: 0;
+            border-radius: 999px;
+        }
+    }
+}
